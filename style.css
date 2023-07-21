@@ -1,0 +1,309 @@
+body {
+  background-color: #000019;
+  font-family: "Lilita One", cursive;
+  color: white;
+}
+
+.header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 80px;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.curriculo {
+  background-color: #ff5c81;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.curriculo:hover {
+  background-color: #c1002c;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 30px;
+  padding-left: 200px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.menu a {
+  cursor: pointer;
+  color: #ff5c81;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #c1002c;
+}
+.principal {
+  background-image: url("./img/fundo.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.perfil {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 0px 0px 100px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Press Start 2P", cursive;
+}
+.perfil img {
+  max-width: 400px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.perfil_nome {
+  font-size: 60px;
+}
+.perfil_profissao {
+  font-size: 30px;
+  color: #ff5c81;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 150px;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-top: 10px solid #c1002c;
+  padding-top: 50px;
+}
+
+.sobre_infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.sobre_infos img {
+  max-width: 100px;
+}
+.sobre_titulo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+}
+
+.sobre_titulo::after {
+  content: "";
+  background-image: url("./img/detalhes/detalhe_duplo.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  height: 130px;
+  width: 130px;
+  z-index: -1;
+}
+.sobre_infos p {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 80vw;
+  margin: 0 auto;
+  border-top: 10px solid #c1002c;
+  padding-top: 50px;
+}
+
+.grade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.titulo_grande {
+  max-width: 500px;
+  word-wrap: break-word;
+  font-size: 140px;
+  line-height: 1.5;
+  font-family: "Press Start 2P", cursive;
+}
+.grade_cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.curso {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curso_titulo {
+  font-size: 24px;
+  color: #c1002c;
+  position: relative;
+}
+.curso_titulo::before {
+  content: "";
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(193, 0, 44, 1) 35%,
+    rgba(255, 92, 129, 1) 100%
+  );
+  position: absolute;
+  left: -40px;
+  top: -5px;
+}
+
+.curso_nome {
+  color: #ff5c81;
+}
+
+.curso_texto {
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.curso_horas {
+  color: #7c93f6;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-top: 10px solid #c1002c;
+  padding-top: 50px;
+}
+
+.projetos_titulo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 50px;
+  position: relative;
+}
+.projetos_titulo::before {
+  content: "";
+  background-image: url("./img/detalhes/detalhe_duplo.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -50px;
+  right: -60px;
+  height: 130px;
+  width: 130px;
+  z-index: -1;
+}
+
+.card_projeto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.card_projeto img {
+  max-width: 500px;
+  border-radius: 40px;
+}
+
+.projeto_infos {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card_titulo {
+  font-size: 32px;
+}
+
+.card_subtitulo {
+  font-size: 22px;
+  font-style: italic;
+  color: #7c93f6;
+}
+
+.card_texto {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 10px solid #c1002c;
+  padding: 20px 0;
+}
+
+.footer_copy {
+  font-size: 24px;
+}
+.footer_curso {
+  font-size: 20px;
+  color: #7b7579;
+}
+.footer_autor {
+  font-size: 16px;
+  color: #c1002c;
+  font-style: italic;
+}
