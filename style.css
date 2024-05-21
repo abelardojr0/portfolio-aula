@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
   background-color: #000019;
   font-family: "Lilita One", cursive;
