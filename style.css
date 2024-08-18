@@ -1,5 +1,5 @@
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #000019;
@@ -17,9 +17,10 @@ body {
 .logo {
   max-width: 80px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .curriculo {
@@ -30,6 +31,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
 }
 .curriculo:hover {
   background-color: #c1002c;
@@ -50,6 +52,7 @@ body {
   cursor: pointer;
   color: #ff5c81;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .menu a:hover {
@@ -252,7 +255,8 @@ body {
 .card_projeto {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
   gap: 40px;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
@@ -260,15 +264,45 @@ body {
 }
 
 .card_projeto img {
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 40px;
 }
 
 .projeto_infos {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 15px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  max-width: 30px !important;
+}
+
+.acesso {
+  background-color: #c1002c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.acesso:hover {
+  transform: scale(1.08);
+  background-color: #ff5c81;
+  color: black;
 }
 
 .card_titulo {
@@ -278,7 +312,7 @@ body {
 .card_subtitulo {
   font-size: 22px;
   font-style: italic;
-  color: #7c93f6;
+  color: #c1002c;
 }
 
 .card_texto {
@@ -309,4 +343,10 @@ body {
   font-size: 16px;
   color: #c1002c;
   font-style: italic;
+}
+
+.container-projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
